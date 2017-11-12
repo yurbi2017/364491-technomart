@@ -63,7 +63,7 @@
    <main>
      <div class="container">
        <section class="promo-block">
-         <h2>Промоблок</h2>
+         <h2 class="visually-hidden">Промоблок</h2>
          <div class="promo">
            <div class="promo-item flag-new">
              <h3>Материалы</h3>
@@ -238,6 +238,28 @@
                <img src="img/layer-5-map.png" width="300" height="158" alt="Офис на карте">
            </div>
            <a class="btn" href="#">Заблудились? Напишите нам!</a>
+
+           <section class="write-me">
+              <h3 class="visually-hidden">Напишите нам</h3>
+              <form class="user" method="post" action="https://echo.htmlacademy.ru">
+                <p>
+                  <label for="write-name">Ваше имя:</label>
+                  <input id="write-name" type="text" name="name" placeholder="Предствьтесь, пожалуйста">
+                </p>
+                <p>
+                  <label for="write-email">Ваш e-mail:</label>
+                  <input id="write-email" type="email" name="email" placeholder="Для отправки ответа">
+                </p>
+                <p>
+                  <label for="write-comment">Текст письма:</label>
+                  <textarea name="comment" id="write-comment" rows="10">
+                    В свободной форме
+                  </textarea>
+                </p>
+                <button type="submit">Отправить</button>
+              </form>
+           </section>
+
          </div>
        </div>
      </div>
