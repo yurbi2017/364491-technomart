@@ -86,22 +86,44 @@
           <div class="filter-title">
            <h2>Фильтр:</h2>
           </div>
-          <form>
+          <form action="#" method="post">
             <fieldset class="filter-price">
-              <h3>Цена:</h3>
+              <legend class="fiter-type">Цена:</legend>
+              <div class="filter-wrapper">
+                <div class="filter-range-wrapper">
+                  <div class="filter-range">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="handle toggle-min"></div>
+                    <div class="handle toggle-max"></div>
+                  </div>
+                </div>
+                <div class="filter-interval">
+                  <label class="min-price"><input type="text" name="min-price" value="0"></label>
+                  <label class="max-price"><input type="text" name="max-price" value="30000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter-brand">
-              <h3>Производители:</h3>
-              <p>BOSCH</p>
-              <p>Интерскол</p>
-              <p>Makita</p>
-              <p>DeWALT</p>
-              <p>HITACHI</p>
+              <legend class="fiter-type">Производители:</legend>
+              <input class="check-brand" type="checkbox" name="brand" id="brand-bosch" checked>
+              <label for="brand-bosch">BOSCH</label>
+              <input class="check-brand" type="checkbox" name="brand" id="brand-inter">
+              <label for="brand-inter">Интерскол</label>
+              <input class="check-brand" type="checkbox" name="brand" id="brand-makita" checked disabled>
+              <label for="brand-makita">Makita</label>
+              <input class="check-brand" type="checkbox" name="brand" id="brand-dewalt">
+              <label for="brand-dewalt">DeWALT</label>
+              <input class="check-brand" type="checkbox" name="brand" id="brand-hitachi" disabled>
+              <label for="brand-hitachi">HITACHI</label>
             </fieldset>
             <fieldset class="filter-current">
-              <h3>Питание:</h3>
-              <p>Аккумуляторные</p>
-              <p>Сетевые</p>
+              <legend class="fiter-type">Питание:</legend>
+              <input class="rad-current" type="radio" name="current" id="current-battery" checked>
+              <label for="current-battery">Аккумуляторные</label>
+              <input class="rad-current" type="radio" name="current" id="current-power" disabled>
+              <label for="current-power">Сетевые</label>
             </fieldset>
             <input class="filter-button" type="submit" value="Показать">
           </form>
@@ -119,7 +141,10 @@
 
           <section class="sorting-items">
             <div class="catalog-item">
-
+              <div class="bosch-cover">
+                <a class="buy" href="#">Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
               <div class="bosch">
                 <img src="img/bosch3.jpg" width="216" height="170" alt="BOSCH BFG 3000">
               </div>
@@ -128,7 +153,10 @@
               <a class="commodity" href="#">15500 Р.</a>
             </div>
             <div class="catalog-item">
-
+              <div class="bosch-cover">
+                <a class="buy" href="#">Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
               <div class="bosch">
                 <img src="img/bosch6.jpg" width="216" height="170" alt="BOSCH BFG 6000">
               </div>
@@ -141,13 +169,18 @@
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
               </div>
-
+              <div class="bosch">
+                <img src="img/bosch3.jpg" width="216" height="170" alt="BOSCH BFG 2000">
+              </div>
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <b></b>
               <a class="commodity" href="#">12500 Р.</a>
             </div>
             <div class="catalog-item">
-
+              <div class="bosch-cover">
+                <a class="buy" href="#">Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
               <div class="bosch">
                 <img src="img/bosch3.jpg" width="216" height="170" alt="BOSCH BFG 3000">
               </div>
@@ -156,7 +189,10 @@
               <a class="commodity" href="#">15500 Р.</a>
             </div>
             <div class="catalog-item flag-new">
-
+              <div class="bosch-cover">
+                <a class="buy" href="#">Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
               <div class="bosch">
                 <img src="img/bosch6.jpg" width="216" height="170" alt="BOSCH BFG 6000">
               </div>
@@ -165,7 +201,10 @@
               <a class="commodity" href="#">25500 Р.</a>
             </div>
             <div class="catalog-item">
-
+              <div class="bosch-cover">
+                <a class="buy" href="#">Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
               <div class="bosch">
                 <img src="img/bosch3.jpg" width="216" height="170" alt="BOSCH BFG 2000">
               </div>
@@ -174,7 +213,10 @@
               <a class="commodity" href="#">12500 Р.</a>
             </div>
             <div class="catalog-item flag-new">
-
+              <div class="bosch-cover">
+                <a class="buy" href="#">Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
               <div class="bosch">
                 <img src="img/bosch3.jpg" width="216" height="170" alt="BOSCH BFG 3000">
               </div>
@@ -183,7 +225,10 @@
               <a class="commodity" href="#">15500 Р.</a>
             </div>
             <div class="catalog-item">
-
+              <div class="bosch-cover">
+                <a class="buy" href="#">Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
               <div class="bosch">
                 <img src="img/bosch6.jpg" width="216" height="170" alt="BOSCH BFG 6000">
               </div>
@@ -192,7 +237,10 @@
               <a class="commodity" href="#">25500 Р.</a>
             </div>
             <div class="catalog-item">
-
+              <div class="bosch-cover">
+                <a class="buy" href="#">Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
               <div class="bosch">
                 <img src="img/bosch3.jpg" width="216" height="170" alt="BOSCH BFG 2000">
               </div>

@@ -9,9 +9,10 @@
      <div class="main-header-top">
        <div class="container">
          <a class="index-logo">Техномарт</a>
-         <form class="page-header-search">
-               <span>Поиск:</span>
-         </form>
+         <form class="page-header-search" action="#" method="post">
+                <input type="search" id="field-search" name="search" placeholder="Поиск">
+                <label for="field-search">Поиск:</label>
+          </form>
          <a class="bookmark" href="#">Закладки: 0</a>
          <a class="basket" href="#">Корзина: 0</a>
          <a class="order" href="#">Оформить заказ</a>
@@ -78,16 +79,28 @@
              <a class="promo" href="#">Для стройки</a>
            </div>
            <div class="promo-slider">
-             <div class="promo-slide">
-               <b>Перфораторы</b>
-               <p>Настоящие мужские игрушки</p>
-               <a class="in-catalog" href="#">Открыть каталог</a>
-             </div>
-             <div class="promo-slide">
-               <b>Дрели</b>
-               <p>Соседям на радость!</p>
-               <a class="in-catalog" href="#">Открыть каталог</a>
-             </div>
+              <input type="radio" id="btn-1" name="catalog" checked>
+              <input type="radio" id="btn-2" name="catalog">
+              <div class="promo-slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+              </div>
+              <div class="promo-slider-inner">
+                <div class="promo-slider-slides">
+                  <div class="promo-slide">
+                    <h2>Перфораторы</h2>
+                    <p>Настоящие мужские игрушки</p>
+                    <a class="in-catalog" href="#">Открыть каталог</a>
+                    <img src="img/slider-1.jpg" width="620" height="266" alt="Перфораторы">
+                  </div>
+                  <div class="promo-slide">
+                    <h2>Дрели</h2>
+                    <p>Соседям на радость!</p>
+                    <a class="in-catalog" href="#">Открыть каталог</a>
+                    <img src="img/slider-2.jpg" width="620" height="266" alt="Дрели">
+                  </div>
+                </div>
+              </div>
             </div>
            <div class="promo-item">
              <h3>Скидки 50%</h3>
@@ -195,27 +208,36 @@
          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
        </div>
        <div class="service-slider">
-         <ul>
-           <li>Доставка</li>
-           <li>Гарантия</li>
-           <li>Кредит</li>
-         </ul>
-         <div class="slide-text">
-           <h2>Доставка</h2>
-           <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+         <input type="radio" id="btn-3" name="catalog" checked>
+         <input type="radio" id="btn-4" name="catalog">
+         <input type="radio" id="btn-5" name="catalog">
+         <div class="service-slider-controls">
+           <label for="btn-3">Доставка</label>
+           <label for="btn-4">Гарантия</label>
+           <label for="btn-5">Кредит</label>
          </div>
-
-         <div class="slide-text">
-           <h2>Гарантия</h2>
-           <p>Если купленный у нас товар поломается или заискрит,<br> а так же в случае пожара, спровацированного его возгоранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> Дом уже восстановите как-нибудь сами.</p>
+         <div class="service-slider-slides">
+           <div class="service-slide">
+             <div class="slide-text">
+               <h2>Доставка</h2>
+               <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+             </div>
+           </div>
+           <div class="service-slide">
+             <div class="slide-text">
+               <h2>Гарантия</h2>
+               <p>Если купленный у нас товар поломается или заискрит,<br> а так же в случае пожара, спровацированного его возгоранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> Дом уже восстановите как-нибудь сами.</p>
+             </div>
+           </div>
+           <div class="service-slide">
+             <div class="slide-text">
+               <h2>Кредит</h2>
+               <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут к вам на помощь.</p>
+               <a class="btn" href="#">Отправить заявку</a>
+             </div>
+           </div>
          </div>
-
-         <div class="slide-text">
-           <h2>Кредит</h2>
-           <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут к вам на помощь.</p>
-           <a class="btn" href="#">Отправить заявку</a>
-          </div>
-        </div>
+       </div>
      </section>
 
      <div class="container">
