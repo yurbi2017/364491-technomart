@@ -753,22 +753,31 @@ body {
   background-color: #ee3643;
 }
 
+.user-block-active {
+  flex-wrap: wrap;
+}
+
 .user-block .login-inclusion {
   font-size: 21px;
   width: 193px;
+  height: 45px;
   color: #000000;
   text-decoration: none;
   background-color: #ffffff;
 }
 
 .user-block .exit {
+  font-size: 0;
   width: 45px;
   height: 45px;
   background-color: #ffffff;
 }
 
 .my-room {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .my-room a {
@@ -776,10 +785,15 @@ body {
   line-height: 1.125;
   color: #32425c;
   text-decoration: underline;
+  padding: 0 20px;
 }
 
 .breadcrumbs-catalog {
+  display: flex;
   list-style: none;
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
 }
 
 .breadcrumbs-catalog li {
@@ -789,6 +803,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   list-style: none;
+  padding-right: 40px;
 }
 
 .breadcrumbs-catalog a {
@@ -798,6 +813,8 @@ body {
 
 .perforators-title {
   background-color: #f2f6f8;
+  margin: 0;
+  padding: 0;
 }
 
 .perforators-title h1 {
@@ -807,6 +824,10 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   color: #3d546e;
+}
+
+.filter-sorting-wrapper {
+  display: flex;
 }
 
 .filter {
@@ -992,7 +1013,19 @@ body {
 }
 
 .sorting-items {
+  display: flex;
+  flex-wrap: wrap;
   width: 700px;
+}
+
+.paginator {
+  display: flex;
+}
+
+.paginator ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .paginator li,
