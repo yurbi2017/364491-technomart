@@ -160,8 +160,12 @@ body {
 
 .promo-block {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
-  align-content: space-between;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
   margin-bottom: 80px;
   outline: 2px solid #2EFF23;
 }
@@ -221,6 +225,7 @@ body {
   display: flex;
   width: 620px;
   height: 265px;
+  position: relative;
 }
 
 .promo-slider h2 {
@@ -238,16 +243,26 @@ body {
   color: #ffffff;
 }
 
-.promo-slider .in-catalog {
+.promo-slide .in-catalog {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
   color: #ffffff;
   width: 146px;
   height: 27px;
   border-radius: 3px;
   background-color: #ee3643;
+}
+
+.promo-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
 
 .promo-slider input {
@@ -302,6 +317,7 @@ body {
   width: 218px;
   min-height: 313px;
   border: 1px solid #EAEAEA;
+  margin-top: 20px;
 }
 
 .bosch-cover {
@@ -391,8 +407,9 @@ body {
 
 .brand-items {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
-  align-content: space-between;
+  justify-content: space-between;
 }
 
 .brand-item {
@@ -400,6 +417,7 @@ body {
   line-height: 143px;
   width: 218px;
   border: 1px solid #EAEAEA;
+  margin-top: 20px;
 }
 
 .service {
