@@ -166,7 +166,6 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #ffffff;
-  margin-bottom: 80px;
   outline: 2px solid #2EFF23;
 }
 
@@ -174,38 +173,58 @@ body {
   display: none;
 }
 
-.promo-top {
+.promo-left,
+.promo-right {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.promo-bottom {
-  display: flex;
-  flex-direction: column;
+.promo-left {
+  width: 620px;
+}
+
+.promo-right {
+  width: 300px;
 }
 
 .promo-item {
+  padding: 21px 24px 22px;
   width: 300px;
-  height: 123px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.2857;
+}
+
+.promo-item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.promo-item.stuff {
   background-color: #ffbf47;
 }
 
-.promo-item:nth-child(2) {
+.promo-item.tools {
   background-color: #3bbce3;
 }
 
-.promo-item:nth-child(3) {
+.promo-item.equipment {
   background-color: #dc91d8;
 }
 
-.promo-item:nth-child(5) {
+.promo-item.discount {
   background-color: #8ed78f;
+}
+
+.promo-item.delivery {
+  background-color: #ffc047;
 }
 
 .promo-item h2 {
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
-  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .promo-item .promo {
