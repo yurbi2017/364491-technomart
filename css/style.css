@@ -1197,10 +1197,10 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
   margin-top: 150px;
-  outline: 2px solid #FFDD00;
 }
 
 .main-footer-top {
+  margin: 0 auto;
   background-color: #3d546e;
 }
 
@@ -1211,15 +1211,19 @@ input[type="radio"].visually-hidden {
 
 .footer-top-left {
   width: 380px;
+  margin-right: 0;
+  margin-bottom: 15px;
 }
 
 .index-logo-footer {
+  display: block;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   width: 140px;
   height: 30px;
+  padding: 17px 40px;
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
 }
@@ -1236,19 +1240,26 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 3px;
 }
 
 .footer-top-right {
-
   width: 550px;
 }
 
 .footer-navigation-top ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 37px;
+}
+
+.footer-navigation-top li:not(:first-child) {
+  padding-left: 59px;
 }
 
 .footer-navigation-top a {
@@ -1258,17 +1269,17 @@ input[type="radio"].visually-hidden {
   color: #f1f5f7;
 }
 
-.mfb-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 .footer-navigation-bottom ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 34px;
+}
+
+.footer-navigation-bottom li:not(:first-child) {
+  padding-left: 59px;
 }
 
 .footer-navigation-bottom a {
@@ -1278,8 +1289,25 @@ input[type="radio"].visually-hidden {
   color: #ffd180;
 }
 
+.footer-navigation-top a:hover,
+.footer-navigation-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation-top a:active,
+.footer-navigation-bottom a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+
 .main-footer-bottom {
+  margin: 0 auto;
   background-color: #33445b;
+}
+
+.mfb-wrapper {
+  display: flex;
 }
 
 .footer-copyright {
@@ -1287,15 +1315,26 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   color: #ffffff;
   width: 234px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  padding-left: 2px;
+  margin-top: 10px;
+  margin-right: 150px;
 }
 
 .footer-social {
   width: 150px;
+  position: relative;
+  margin-left: 4px;
+  margin-right: 96px;
+  margin-top: 37px;
 }
 
 .social-btn {
+  display: inline-block;
   width: 41px;
   height: 41px;
+  margin-right: 1px;
   font-size: 0;
   vertical-align: top;
   text-decoration: none;
@@ -1303,33 +1342,92 @@ input[type="radio"].visually-hidden {
   background-color: #212a3a;
 }
 
+.social-btn:hover,
+.social-btn:active {
+  background-color: #ee3643;
+}
+
+.social-btn-vk::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 20px;
+  height: 12px;
+  background: url("../img/icon-vk copy.png") no-repeat;
+}
+
+.social-btn-fb::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 61px;
+  width: 10px;
+  height: 18px;
+  background: url("../img/icon-facebook-copy.png") no-repeat;
+}
+
+.social-btn-inst::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 104px;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icon-instagramm copy.png") no-repeat;
+}
+
 .connect {
   font-size: 16px;
   line-height: 18px;
   width: 150px;
+  margin: 0;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 
 .connect p {
   color: #ffffff;
+  padding-left: 5px;
+  padding-top: 2px;
+  margin-bottom: 0;
 }
 
 .connect a {
   color: #ffd180;
   text-decoration: none;
+  padding-left: 5px;
 }
 
 .working {
   width: 140px;
   text-align: center;
+  padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .working p {
   color: #ffffff;
+  padding-left: 5px;
+  padding-top: 2px;
+  margin-bottom: 0;
 }
 
 .working a {
   color: #ffd180;
   text-decoration: none;
+  padding-left: 15px;
+}
+
+.connect a:hover,
+.working a:hover {
+  text-decoration: underline;
+}
+
+.connect a:active,
+.working a:active {
+  text-decoration: none;
+  color: #ee3643;
 }
 
 
