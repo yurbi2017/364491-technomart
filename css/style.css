@@ -1101,11 +1101,13 @@ input[type="radio"].visually-hidden {
 
 .index-content {
   display: flex;
-  outline: 2px solid #FFDD00;
+  justify-content: space-between;
+  margin-bottom: 0px;
 }
 
 .index-content-left {
   width: 540px;
+  position: relative;
 }
 
 .index-content-title {
@@ -1115,6 +1117,9 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 10px;
 }
 
 .index-content-left p {
@@ -1122,10 +1127,13 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+  padding-bottom: 10px;
 }
 
 .index-content-left ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .index-content-left li {
@@ -1133,9 +1141,17 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 20px;
   font-weight: normal;
+  padding: 10px 36px;
+}
+
+.index-content-left li:first-child {
+  padding-top: 0px;
 }
 
 .index-content-left .btn {
+  position: absolute;
+  top: 340px;
+  left: 0;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1143,12 +1159,15 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   width: 179px;
   height: 28px;
+  padding-top: 10px;
+  padding-left: 42px;
   border-radius: 3px;
   background-color: #ff5357;
 }
 
 .index-content-right {
   width: 300px;
+  position: relative;
 }
 
 .index-content-right p {
@@ -1156,9 +1175,13 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+  padding-bottom: 20px;
 }
 
 .index-content-right .btn {
+  position: absolute;
+  top: 340px;
+  left: 0;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1166,12 +1189,14 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   width: 236px;
   height: 28px;
+  padding-top: 10px;
+  padding-left: 64px;
   border-radius: 3px;
   background-color: #ff5357;
 }
 
 .main-footer {
-  margin-top: 85px;
+  margin-top: 150px;
   outline: 2px solid #FFDD00;
 }
 
