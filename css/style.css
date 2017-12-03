@@ -884,7 +884,7 @@ input[type="radio"].visually-hidden {
 }
 
 .brand {
-  margin-bottom: 65px;
+  margin-bottom: 85px;
 }
 
 .brand-items {
@@ -931,12 +931,14 @@ input[type="radio"].visually-hidden {
 .service {
   background-color: #f4f7f9;
   min-height: 520px;
-  margin-bottom: 80px;
-  outline: 2px solid #32425c;
+  margin: 0 auto;
+  margin-bottom: 75px;
 }
 
 .service-title {
-  width:940px;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .service-title h2 {
@@ -946,6 +948,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   text-transform: uppercase;
   color: #000000;
+  padding-top: 65px;
 }
 
 .service-title p {
@@ -956,12 +959,16 @@ input[type="radio"].visually-hidden {
 }
 
 .service-slider {
+  position: relative;
   display: flex;
   width: 950px;
   height: 285px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .service-slider input[type=radio] {
+  position: absolute;
   opacity: 0;
 }
 
@@ -970,18 +977,37 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   width: 240px;
   height: 185px;
+  margin-top: 8px;
 }
 
 .service-slider-controls label {
+  display: block;
   font-family: "Cuprum", "Arial", serif;
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
   width: 218px;
-  height: 45px;
+  height: 47px;
+  padding-left: 22px;
+  padding-top: 15px;
+  margin: 1px 0;
   background: #32425c;
   cursor:pointer;
+}
+
+.service-slider-controls label:hover {
+  background: #293449;
+}
+
+.service-slider-controls::after {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 231px;
+  width: 10px;
+  height: 272px;
+  background: url("../img/service-slider-shadow.png") no-repeat;
 }
 
 .service-slider-slides {
@@ -997,11 +1023,13 @@ input[type="radio"].visually-hidden {
 }
 
 .service-slide{
-  width:65%;
-  height:100%;
-  overflow:hidden;
+  position: absolute;
+  top: 0;
+  left: 320px;
+  width: 65%;
+  height: 100%;
+  overflow: hidden;
 }
-
 
 .slide-text h2 {
   font-family: "Cuprum", "Arial", serif;
@@ -1010,6 +1038,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   text-transform: uppercase;
   color: #3d546e;
+  margin-top: 10px;
 }
 
 .slide-text p {
@@ -1039,6 +1068,9 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-text a {
+  position: absolute;
+  top: 165px;
+  left: 0px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1048,6 +1080,8 @@ input[type="radio"].visually-hidden {
   height: 25px;
   border-radius: 3px;
   background-color: #ff5357;
+  padding-top: 10px;
+  padding-left: 50px;
 }
 
 .service-slide {
@@ -1063,6 +1097,7 @@ input[type="radio"].visually-hidden {
 #btn-5:checked ~ .service-slider-slides .service-slide:nth-child(3) {
     display: block;
 }
+
 
 .index-content {
   display: flex;
