@@ -30,7 +30,6 @@ input[type="radio"].visually-hidden {
 .main-header {
   background-color: #f1f5f7;
   padding-bottom: 60px;
-  margin-bottom: 60px;
 }
 
 .main-header-top {
@@ -434,7 +433,7 @@ input[type="radio"].visually-hidden {
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 55px;
   color: #ffffff;
 }
@@ -1439,22 +1438,79 @@ input[type="radio"].visually-hidden {
 
 .user-block-active {
   flex-wrap: wrap;
+  position: relative;
 }
 
 .user-block .login-inclusion {
+  position: relative;
   font-size: 21px;
-  width: 193px;
-  height: 45px;
-  color: #000000;
   text-decoration: none;
+  width: 193px;
+  color: #000000;
+  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  margin-left: 17px;
   background-color: #ffffff;
 }
 
+.user-block .login-inclusion::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 20px;
+  height: 18px;
+  background: url("../img/icon-user.png") no-repeat;
+}
+
+.user-block .login-inclusion:hover::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 20px;
+  height: 18px;
+  background: url("../img/icon-user-hover.png") no-repeat;
+}
+
+.user-block .login-inclusion::after {
+  content: "";
+  position: absolute;
+  top: 59px;
+  left: 106px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #32425c;
+}
+
 .user-block .exit {
+  position: relative;
   font-size: 0;
   width: 45px;
   height: 45px;
   background-color: #ffffff;
+}
+
+.user-block .exit::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 29px;
+  width: 21px;
+  height: 17px;
+  background: url("../img/icon-logout.png") no-repeat;
+}
+
+.user-block .exit:hover::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 29px;
+  width: 21px;
+  height: 17px;
+  background: url("../img/icon-logout-hover.png") no-repeat;
 }
 
 .my-room {
@@ -1462,6 +1518,16 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 34px;
+}
+
+.my-room li {
+  position: relative;
+  display: inline-block;
+  text-align: top;
+  padding-right: 32px;
 }
 
 .my-room a {
@@ -1469,25 +1535,63 @@ input[type="radio"].visually-hidden {
   line-height: 1.125;
   color: #32425c;
   text-decoration: underline;
-  padding: 0 20px;
+}
+
+.user-block .my-order:hover,
+.user-block .account:hover {
+  color: #ee3643;
+}
+
+.user-block .exit:active,
+.user-block .login-inclusion:active,
+.user-block .my-order:active,
+.user-block .account:active {
+  opacity: 0.3;
 }
 
 .breadcrumbs-catalog {
   display: flex;
+  position: relative;
   list-style: none;
   margin: 0;
-  margin-bottom: 22px;
+  margin-top: 20px;
+  margin-left: 14px;
   padding: 0;
 }
 
 .breadcrumbs-catalog li {
+  position: relative;
   font-family: "PT Sans", "Arial", serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
   list-style: none;
-  padding-right: 40px;
+  margin-right: 41px;
+}
+
+.breadcrumbs-catalog::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -14px;
+  width: 15px;
+  height: 12px;
+  background: url("../img/icon-home.png") no-repeat;
+}
+
+.breadcrumbs-catalog li:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -25px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/icon-right-small.svg") no-repeat;
+}
+
+.breadcrumbs-catalog li:first-child {
+  font-size: 0;
 }
 
 .breadcrumbs-catalog a {
